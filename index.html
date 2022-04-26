@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gestor Registros Personas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="border border-light p-5" id ="frmNuevoRegistro">
+                    <p class="h4 mb-4 text-left">Nuevo Registro</p>
+                    <input type="text" id="nombres" class="form-control mb-4" placeholder="Nombre" required>
+                    <input type="text" id="apellidos" class="form-control mb-4" placeholder="Apellidos" required>
+                    <input type="email" id="correos" class="form-control mb-4" placeholder="E-mail" required>
+
+                    <!-- Solamente sera habilitado cuando ya haya datos en los campos -->
+                    <button class="btn btn-success btn-block my-4" id="btnCreaRegistro" >Crear</button>
+                </form>
+            </div>
+        </div>
+        <!-- Segunda fila -->
+        <div class="row mt-5">
+            <div class="col">
+                <p class="h3 mb-4 text-center">Registros</p>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-borderless ">
+                      <thead>
+                        <tr>
+                          
+                          <th scope="col">Nombres</th>
+                          <th scope="col">Apellidos</th>
+                          <th scope="col">Correos</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody id="registros">
+                    
+                      </tbody>
+                  
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+    <script type="text/javascript" src="js/herramientas.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
